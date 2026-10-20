@@ -1,0 +1,4 @@
+# /etc/cron.d/app-backup
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin
+15 2 * * * root /opt/backup/rsync_backup.sh /srv/app /var/backups/app
